@@ -1,7 +1,8 @@
 ﻿# Windows Logger
 
 Windows logger is a tool used to retrieve and store data from windows event viewer for the purpose of finding possible breaches in security. 
-Also included is a keylogger that can be turned on in order to record keystrokes.
+Also included is a keylogger that can be turned on in order to record keystrokes. The purpose of this software is to log and monitor how 
+your computer is being used.
 
 ## Installation
 
@@ -11,4 +12,6 @@ Note that some features require administrative privileges given to the program.
 
 ## Feature log:
 
-Currently the program only logs windows event viewer data into 3 text files located in the /bin folder. The Keylogger is not yet implemented
+The program has all functionality. It retreives application logs, sytem logs, and security logs from windows event viewer. 
+The keylogger records keystrokes and saves them to a file. All information retreived from either part of the program is found in
+the Data folder of the application. 
